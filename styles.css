@@ -648,6 +648,22 @@ a { color: var(--magenta); }
 
 .footer-note { max-width: 34ch; line-height: 1.6; }
 
+/* Registered address and EIN — required for nonprofit verification. */
+.footer-org {
+  margin-top: 1.25rem;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.58);
+}
+
+.footer-org-line { display: block; }
+
+.footer-ein {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
 .footer-nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
