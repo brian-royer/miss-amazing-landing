@@ -324,18 +324,18 @@ a { color: var(--magenta); }
 }
 
 /* Narrow screens: there is no room for a side-by-side photo, so it drops
-   behind the copy as a faint texture with a scrim to protect contrast. */
+   behind the copy as a texture with a scrim to protect contrast. */
 @media (max-width: 1024px) {
   .hero-photo {
     width: 100%;
-    opacity: 0.26;
+    opacity: 0.38;
     object-position: 58% 22%;
     -webkit-mask-image: radial-gradient(ellipse 95% 85% at 65% 38%, #000 22%, transparent 82%);
     mask-image: radial-gradient(ellipse 95% 85% at 65% 38%, #000 22%, transparent 82%);
   }
 
   .hero::after {
-    background: linear-gradient(180deg, rgba(46, 28, 83, 0.45), rgba(46, 28, 83, 0.72));
+    background: linear-gradient(180deg, rgba(46, 28, 83, 0.42), rgba(46, 28, 83, 0.68));
   }
 }
 
