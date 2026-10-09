@@ -1,0 +1,7 @@
+* text=auto eol=lf
+
+# Keep CNAME byte-exact: GitHub Pages reads it to claim the domain.
+CNAME text eol=lf
+
+*.webp binary
+*.ico  binary
