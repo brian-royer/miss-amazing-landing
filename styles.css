@@ -648,16 +648,18 @@ a { color: var(--magenta); }
 
 .footer-note { max-width: 34ch; line-height: 1.6; }
 
-/* Registered address and EIN — required for nonprofit verification. */
+/* Registered address and EIN — required for nonprofit verification.
+   The lines are block-level elements so they stack correctly even if the
+   stylesheet fails or is served stale from cache. */
 .footer-org {
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
   font-style: normal;
   font-size: 0.875rem;
   line-height: 1.6;
   color: rgba(255,255,255,0.58);
 }
 
-.footer-org-line { display: block; }
+.footer-org-line { display: block; margin: 0; }
 
 .footer-ein {
   font-variant-numeric: tabular-nums;
